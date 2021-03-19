@@ -45,8 +45,18 @@
 	<bean id ="t6" class="kr.hs.study.beans.TestBean2" lazy-init="true">
 		<constructor-arg ref="d1"/>
 		<constructor-arg ref="d1"/>
+		</bean>
+	<!-- <bean id="Person" class="kr.hs.study.beans.Person"/>
+	<bean id="TestUser" class="kr.hs.study.beans.TestUser" lazy-init="true">
+	<constructor-arg value="high"/>
+	<constructor-arg  value="3" type="int"/>
+	<constructor-arg  ref="Person"/>
 	
 	</bean>
-	
+ -->
+	<bean id="t7" class="kr.hs.study.beans.TestBean3">
+	<property name="data1" value="100"/>
+	<property name="data2" value="111.11"/>
+	</bean>	
 </beans>
 
